@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /**/
+
+    .block{
+        /*height->apply,
+        width->apply
+        p,m,border*/
+        background-color: lightblue;
+        /*user defined heigth:works*/
+        height: 100px;
+        /*user defined width:works*/
+        width: 100px;
+        /*next element ->nextline*/
+        /*padding->in all directions*/
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /*margin -> in all directions*/
+        margin-top: 40px;
+        margin-left: 20px;
+
+        /*border*/
+        border-top: 2px solid red;
+        border-left: 2px solid red;
+    
+    }
+    .inline_block{
+        background-color: blueviolet;
+        height: 100px;
+        width: 100px;
+    }
+    .inline{
+        background-color: lawngreen;
+        /*userdefined height->not works*/
+        height: 100px;
+        /*userdefined width->not works*/
+        width: 100px;
+        display: inline;
+        /*padding -> in all direction*/
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        /*border ->in all direction*/
+        border-top: 2px solid red;
+        border-left: 2px solid red;
+    
+        /*margin ->only works horizontally*/
+        margin-top: 40px;
+        margin-left: 20px;
+
+        /*next element-> */
+
+    }
+</style>
+<body>
+    <!--block level element-->
+    <h2>hello from h2</h2>
+    <div class="block">Hello Hi how are you</div>
+    <span></span>
+    <!--inline element-->
+    <div class="inline">I am inline</div>
+    <!--inline block-->
+    <div class="inline_block">I am inline block</div>
+    
+</body>
+</html>
