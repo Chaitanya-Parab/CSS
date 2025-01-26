@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .parent{
+        height: 38rem;
+        width: 400px;
+        background-color: purple;
+
+        /*layout features*/
+        display: flex;
+
+        /*horixontally*/
+        /*justify-content: baseline;
+        justify-content: center;
+        justify-content: end;
+        justify-content: flex-start;
+        justify-content: space-evenly;
+        justify-content: space-between;
+        justify-content: space-around;*/
+
+        /*align items*/
+        align-items: center;
+        align-items: flex-end;
+        align-items: flex-start;
+    }
+    .child{
+        color: tomato;
+        font-size: 2rem;
+        background-color: lightcoral;
+        font-weight: bold;
+        border: 1px solid green;
+        font-family: sans-serif;
+        height: 100px;
+        width: 100px;
+    }
+    .one{
+        align-self: center;
+    }
+    .two{
+        align-self: flex-end;
+    }
+</style>
+<body>
+    <h2>Flexbox example</h2>
+    <div class="parent">
+        <div class="child"> child</div>
+        <div class="child two"> child</div>
+        <div class="child three"> child</div>
+        
+    </div>
+</body>
+</html>

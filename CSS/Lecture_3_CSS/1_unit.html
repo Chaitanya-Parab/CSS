@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     html{
+        font-family: sans-serif;
+        font-size: 20px;
+         
+    }
+    h2,h3{
+        color: lightcoral;
+        text-align: center;
+    }
+    h3{
+        color: lightgreen;
+    }
+    /**absolute unit
+    *they go as it is in the browser*/
+    .px{
+        height: 100px;
+        width: 200px;
+        background-color: purple;
+        color: white;
+        font-size: 20px;
+    }
+    /*.rem{
+        font-size: 2rem;
+        height: 10rem;
+        width: 20rem;
+        background-color: aquamarine;
+        margin: 1rem;
+
+    }
+    .rem1{
+        font-size: 1rem;
+        height: 10rem;
+        width: 10rem;
+        background-color: lightgreen;
+        margin: 0.5rem;
+
+    }*/
+    /*vh -> 100vh=browsers current window height
+      vw -> 100vw=browsers current window width
+      eg. excel*/
+    .vh-vw{
+        height: 200px;
+        margin-top: 10px;
+        background-color: lightcoral;
+        width: 50vw;
+        height: 20vh;
+    }
+
+    .gp{
+        margin-top: 10px;
+        height: 300px;
+        width: 300px;
+        background-color: lightgreen;
+    }
+    .parent{
+        height: 50%;
+        width: 100%;
+        background-color: blue;
+    }
+    .child{
+        height: 100%;
+        width: 50%;
+        background-color: rgb(255, 242, 0);
+    }
+
+    /*relative unit-> it is a relative unit that depends on some parameter and are usually converted into absolute unit*/
+</style>
+   
+<body>
+    <h2>Units examples</h2>
+    <h3>Absolute</h3>
+    <div class="px">Pixels elements</div>
+    <!--<div class="rem">REM elements UNITS</div>
+    <div class="rem1">REM elements UNITS</div>
+    
+    <div class="vh-vw">VH-VW UNITS</div>-->
+    <!--percentage-->
+    <div class="gp">
+        <div class="parent">
+            <div class="child">percentage UNITS</div>
+        </div>
+    </div>
+   
+    
+</body>
+</html>
